@@ -4,6 +4,7 @@ import { userSchema } from "@/lib/validations/zodValidation";
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
+// Route to create a new user profile
 export async function POST(req: NextRequest) {
     const session = await getServerSession(authOptions);
 
